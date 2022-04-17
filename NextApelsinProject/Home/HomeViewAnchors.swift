@@ -60,6 +60,7 @@ extension HomeViewController{
         
         
         
+        
     }
     
     func createViews() {
@@ -126,11 +127,6 @@ extension HomeViewController{
         headerContainerView.addSubview(downImage)
         downImage.topAnchor.constraint(equalTo: arrowimage.bottomAnchor,constant: -8).isActive=true
         downImage.leftAnchor.constraint(equalTo: headerContainerView.leftAnchor,constant: 10).isActive=true
-        
-        headerContainerView.addSubview(uzsLabel)
-        balanceTopAnchor=uzsLabel.topAnchor.constraint(equalTo: totalLabel.bottomAnchor,constant: 13)
-        balanceTopAnchor?.isActive=true
-        uzsLabel.leftAnchor.constraint(equalTo: downImage.rightAnchor,constant: 10).isActive=true
         
         headerContainerView.addSubview(eyeBtn)
         eyeBtn.topAnchor.constraint(equalTo: totalLabel.bottomAnchor,constant: 10).isActive=true
@@ -296,7 +292,20 @@ extension HomeViewController{
         settingImage.topAnchor.constraint(equalTo: bestView.bottomAnchor,constant: 2).isActive=true
         settingImage.rightAnchor.constraint(equalTo: widgetLabel.leftAnchor,constant: -3).isActive=true
         
-       
+        guard let navbar = navigationController?.navigationBar else {
+            return
+        }
+        navbar.addSubview(uzsLabel)
+        balanceTopAnchor=uzsLabel.topAnchor.constraint(equalTo: navbar.topAnchor,constant: 80)
+        balanceTopAnchor?.isActive=true
+        balanceLeftAnchor=uzsLabel.leftAnchor.constraint(equalTo: navbar.leftAnchor,constant: 45)
+        balanceLeftAnchor?.isActive=true
+        
+//        view.addSubview(monyView)
+//        balanceTopAnchor=monyView.topAnchor.constraint(equalTo: view.topAnchor,constant: 90)
+//        balanceTopAnchor?.isActive=true
+//        monyView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 20).isActive=true
+//
         
 
         

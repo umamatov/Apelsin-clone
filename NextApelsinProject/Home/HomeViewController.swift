@@ -367,6 +367,13 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UICollectionVi
         return searchController
     }()
     
+    var monyView: UIView = {
+        let monyView = UIView()
+        monyView.translatesAutoresizingMaskIntoConstraints=false
+        monyView.backgroundColor = .red
+        return monyView
+    }()
+    
     
     
     var list:[Contactmodel]=[]
@@ -379,10 +386,10 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UICollectionVi
     var orangeWidth : NSLayoutConstraint?
     var orangeTopAnchor : NSLayoutConstraint?
     var balanceTopAnchor : NSLayoutConstraint?
+    var balanceLeftAnchor : NSLayoutConstraint?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureNavBar()
         createViews()
         setViewConstraints()
         
@@ -390,6 +397,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UICollectionVi
         setVisaModel()
         setAkfaaModel()
         setBankModelList()
+        configureNavBar()
         
         
         navigationItem.titleView = searchController
@@ -588,7 +596,7 @@ extension HomeViewController{
                               options: .curveEaseOut,
                               animations: {
                 self.setUpAnimation(scrollView)
-                self.uzsLabel.isHidden=true
+//                self.uzsLabel.isHidden=true
                 self.totalLabel.isHidden=true
                 self.arrowimage.isHidden=true
                 self.downImage.isHidden=true
@@ -600,7 +608,7 @@ extension HomeViewController{
             
         }else{
             self.setBelowAnimation(scrollView)
-            self.uzsLabel.isHidden = false
+//            self.uzsLabel.isHidden = false
             self.totalLabel.isHidden=false
             self.arrowimage.isHidden=false
             self.downImage.isHidden=false
@@ -613,18 +621,26 @@ extension HomeViewController{
     
     func setUpAnimation(_ scrollView: UIScrollView) {
         orangeTopAnchor?.constant=UIScreen.main.bounds.height*0.11
+        self.balanceTopAnchor?.constant=10
+        balanceLeftAnchor?.constant=60
+        
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
             self.view.layoutIfNeeded()
+            self.navigationController?.navigationBar.layoutIfNeeded()
         }, completion: nil)
+        
+        
         
     }
     
     
     func setBelowAnimation(_ scrollView: UIScrollView) {
-        
         orangeTopAnchor?.constant=UIScreen.main.bounds.height*0.22
+        self.balanceTopAnchor?.constant=95
+        balanceLeftAnchor?.constant=40
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
             self.view.layoutIfNeeded()
+            self.navigationController?.navigationBar.layoutIfNeeded()
         }, completion: nil)
         
     }
