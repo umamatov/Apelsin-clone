@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_NextApelsinProject_NextApelsinProjectUITests : NSObject
+@end
+@implementation PodsDummy_Pods_NextApelsinProject_NextApelsinProjectUITests
+@end

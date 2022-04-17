@@ -1,0 +1,23 @@
+//
+//  NavBr.swift
+//  NextApelsinProject
+//
+//  Created by Umidjon Mamatov on 12/04/22.
+//
+import Foundation
+import UIKit
+
+extension UIViewController {
+    
+    func navibationBar(){
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor=UIColor(rgb: 0xffEEF0F5)
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
+      
+    }
+
+
+}
