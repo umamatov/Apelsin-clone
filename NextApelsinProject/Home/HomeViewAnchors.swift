@@ -300,12 +300,7 @@ extension HomeViewController{
         balanceTopAnchor?.isActive=true
         balanceLeftAnchor=uzsLabel.leftAnchor.constraint(equalTo: navbar.leftAnchor,constant: 45)
         balanceLeftAnchor?.isActive=true
-        
-//        view.addSubview(monyView)
-//        balanceTopAnchor=monyView.topAnchor.constraint(equalTo: view.topAnchor,constant: 90)
-//        balanceTopAnchor?.isActive=true
-//        monyView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 20).isActive=true
-//
+
         
 
         

@@ -26,6 +26,13 @@
 		59839E1E2805824C00BB2DE3 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59839E1D2805824C00BB2DE3 /* Extention.swift */; };
 		59B9EA12280991BD008B8E9E /* BankServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA11280991BD008B8E9E /* BankServiceModel.swift */; };
 		59B9EA15280999B6008B8E9E /* CollectionViewCellWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA14280999B6008B8E9E /* CollectionViewCellWithTitle.swift */; };
+		59B9EA65280D9951008B8E9E /* CreditCardScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA64280D9951008B8E9E /* CreditCardScannerError.swift */; };
+		59B9EA66280D9951008B8E9E /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA5F280D9951008B8E9E /* CreditCard.swift */; };
+		59B9EA67280D9951008B8E9E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA62280D9951008B8E9E /* CameraView.swift */; };
+		59B9EA68280D9951008B8E9E /* ImageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA61280D9951008B8E9E /* ImageAnalyzer.swift */; };
+		59B9EA69280D9951008B8E9E /* CreditCardScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA60280D9951008B8E9E /* CreditCardScannerViewController.swift */; };
+		59B9EA6A280D9951008B8E9E /* ImageRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA63280D9951008B8E9E /* ImageRatio.swift */; };
+		59B9EA6C280D9BC4008B8E9E /* Reg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9EA6B280D9BC4008B8E9E /* Reg.swift */; };
 		59E8709D280755E30071E4D1 /* MycollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8709C280755E30071E4D1 /* MycollectionView.swift */; };
 		59E8709F280766170071E4D1 /* VisaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E8709E280766170071E4D1 /* VisaModel.swift */; };
 		59E870A128077AF10071E4D1 /* SavedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E870A028077AF10071E4D1 /* SavedCollectionView.swift */; };
@@ -79,6 +86,13 @@
 		59839E1D2805824C00BB2DE3 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		59B9EA11280991BD008B8E9E /* BankServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankServiceModel.swift; sourceTree = "<group>"; };
 		59B9EA14280999B6008B8E9E /* CollectionViewCellWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellWithTitle.swift; sourceTree = "<group>"; };
+		59B9EA5F280D9951008B8E9E /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		59B9EA60280D9951008B8E9E /* CreditCardScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardScannerViewController.swift; sourceTree = "<group>"; };
+		59B9EA61280D9951008B8E9E /* ImageAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalyzer.swift; sourceTree = "<group>"; };
+		59B9EA62280D9951008B8E9E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		59B9EA63280D9951008B8E9E /* ImageRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRatio.swift; sourceTree = "<group>"; };
+		59B9EA64280D9951008B8E9E /* CreditCardScannerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardScannerError.swift; sourceTree = "<group>"; };
+		59B9EA6B280D9BC4008B8E9E /* Reg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reg.swift; sourceTree = "<group>"; };
 		59E8709C280755E30071E4D1 /* MycollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MycollectionView.swift; sourceTree = "<group>"; };
 		59E8709E280766170071E4D1 /* VisaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaModel.swift; sourceTree = "<group>"; };
 		59E870A028077AF10071E4D1 /* SavedCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCollectionView.swift; sourceTree = "<group>"; };
@@ -150,6 +164,7 @@
 		59839DDE2805807100BB2DE3 /* NextApelsinProject */ = {
 			isa = PBXGroup;
 			children = (
+				59B9EA58280D9793008B8E9E /* Camera */,
 				59E8709B2807554A0071E4D1 /* Home */,
 				59839DDF2805807100BB2DE3 /* AppDelegate.swift */,
 				59839DE12805807100BB2DE3 /* SceneDelegate.swift */,
@@ -160,7 +175,6 @@
 				59839DED2805807300BB2DE3 /* Info.plist */,
 				59839E132805814200BB2DE3 /* TransferViewController.swift */,
 				59839E152805816C00BB2DE3 /* PaymentViewController.swift */,
-				59839E19280581A400BB2DE3 /* MenuViewController.swift */,
 				59839E1B2805822800BB2DE3 /* NavBrarswift */,
 				59839E1D2805824C00BB2DE3 /* Extention.swift */,
 				59839E172805818C00BB2DE3 /* ChatViewController.swift */,
@@ -193,6 +207,21 @@
 				59B9EA11280991BD008B8E9E /* BankServiceModel.swift */,
 			);
 			path = BankServices;
+			sourceTree = "<group>";
+		};
+		59B9EA58280D9793008B8E9E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				59839E19280581A400BB2DE3 /* MenuViewController.swift */,
+				59B9EA62280D9951008B8E9E /* CameraView.swift */,
+				59B9EA5F280D9951008B8E9E /* CreditCard.swift */,
+				59B9EA64280D9951008B8E9E /* CreditCardScannerError.swift */,
+				59B9EA60280D9951008B8E9E /* CreditCardScannerViewController.swift */,
+				59B9EA61280D9951008B8E9E /* ImageAnalyzer.swift */,
+				59B9EA63280D9951008B8E9E /* ImageRatio.swift */,
+				59B9EA6B280D9BC4008B8E9E /* Reg.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		59E8709B2807554A0071E4D1 /* Home */ = {
@@ -440,18 +469,25 @@
 				59839DE42805807100BB2DE3 /* ViewController.swift in Sources */,
 				59839E1C2805822800BB2DE3 /* NavBrarswift in Sources */,
 				59839E1E2805824C00BB2DE3 /* Extention.swift in Sources */,
+				59B9EA68280D9951008B8E9E /* ImageAnalyzer.swift in Sources */,
 				59E8709D280755E30071E4D1 /* MycollectionView.swift in Sources */,
 				59839E162805816C00BB2DE3 /* PaymentViewController.swift in Sources */,
 				59839E142805814200BB2DE3 /* TransferViewController.swift in Sources */,
 				59E8709F280766170071E4D1 /* VisaModel.swift in Sources */,
+				59B9EA6A280D9951008B8E9E /* ImageRatio.swift in Sources */,
+				59B9EA66280D9951008B8E9E /* CreditCard.swift in Sources */,
 				59F4A47928097316000A9AE9 /* TransferCell.swift in Sources */,
 				59839E182805818C00BB2DE3 /* ChatViewController.swift in Sources */,
 				59839DE02805807100BB2DE3 /* AppDelegate.swift in Sources */,
 				59E870A128077AF10071E4D1 /* SavedCollectionView.swift in Sources */,
 				59B9EA15280999B6008B8E9E /* CollectionViewCellWithTitle.swift in Sources */,
 				59839DE22805807100BB2DE3 /* SceneDelegate.swift in Sources */,
+				59B9EA67280D9951008B8E9E /* CameraView.swift in Sources */,
+				59B9EA6C280D9BC4008B8E9E /* Reg.swift in Sources */,
+				59B9EA65280D9951008B8E9E /* CreditCardScannerError.swift in Sources */,
 				59839E10280580DA00BB2DE3 /* HomeViewController.swift in Sources */,
 				59B9EA12280991BD008B8E9E /* BankServiceModel.swift in Sources */,
+				59B9EA69280D9951008B8E9E /* CreditCardScannerViewController.swift in Sources */,
 				59F4A47B28098AF8000A9AE9 /* LocalModel.swift in Sources */,
 				59839E1A280581A400BB2DE3 /* MenuViewController.swift in Sources */,
 				59E870A52807F6F60071E4D1 /* HomeViewAnchors.swift in Sources */,
@@ -636,7 +672,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4FTJLWYZ5C;
+				DEVELOPMENT_TEAM = CQ8SPY4G5L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NextApelsinProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -649,7 +685,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ColorsViewController.NextApelsinProject;
+				PRODUCT_BUNDLE_IDENTIFIER = uz.apelsin.clone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -665,7 +701,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4FTJLWYZ5C;
+				DEVELOPMENT_TEAM = CQ8SPY4G5L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NextApelsinProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -678,7 +714,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ColorsViewController.NextApelsinProject;
+				PRODUCT_BUNDLE_IDENTIFIER = uz.apelsin.clone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

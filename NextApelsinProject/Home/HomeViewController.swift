@@ -366,13 +366,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, UICollectionVi
         searchController.searchTextField.rightView?.tintColor = .white
         return searchController
     }()
-    
-    var monyView: UIView = {
-        let monyView = UIView()
-        monyView.translatesAutoresizingMaskIntoConstraints=false
-        monyView.backgroundColor = .red
-        return monyView
-    }()
+   
     
     
     
